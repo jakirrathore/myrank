@@ -3,51 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mera Desh Meri Rank - Live Rankings</title>
+    <title>Mera Desh Meri Rank - Official Site</title>
     <style>
         body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background: linear-gradient(135deg, #FF9933 0%, #ffffff 50%, #138808 100%); padding: 60px 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        header { background: linear-gradient(135deg, #FF9933 0%, #ffffff 50%, #138808 100%); padding: 70px 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         .container { max-width: 900px; margin: 20px auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
-        h1 { color: #1A237E; font-size: 2.5em; margin-bottom: 10px; }
-        h2 { color: #1A237E; border-bottom: 2px solid #FF9933; padding-bottom: 10px; margin-top: 30px; }
-        .btn { display: inline-block; background: #1A237E; color: white; padding: 15px 30px; text-decoration: none; border-radius: 30px; font-weight: bold; margin-top: 20px; transition: 0.3s; }
-        .ranking-card { background: #f9f9f9; padding: 15px; border-radius: 10px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; border-left: 5px solid #138808; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .rank-number { font-weight: bold; color: #1A237E; width: 40px; font-size: 1.2em; }
-        .leader-name { flex-grow: 1; font-weight: 600; font-size: 1.1em; }
-        .rating-star { color: #FF9933; font-weight: bold; font-size: 1.1em; }
-        footer { text-align: center; padding: 40px; color: #777; font-size: 0.9em; }
+        h1 { color: #1A237E; font-size: 2.8em; margin-bottom: 10px; }
+        h2 { color: #1A237E; border-bottom: 2px solid #FF9933; padding-bottom: 10px; margin-top: 40px; }
+        .btn { display: inline-block; background: #1A237E; color: white; padding: 15px 35px; text-decoration: none; border-radius: 30px; font-weight: bold; margin-top: 25px; transition: 0.3s; box-shadow: 0 4px 15px rgba(26, 35, 126, 0.3); }
+        .btn:hover { background: #138808; transform: translateY(-2px); }
+        
+        /* Ranking Styles */
+        .ranking-card { background: #ffffff; padding: 15px; border-radius: 12px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; border-left: 6px solid #138808; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: 0.2s; }
+        .ranking-card:hover { transform: scale(1.01); }
+        .rank-number { font-weight: bold; color: #1A237E; width: 45px; font-size: 1.3em; }
+        .leader-name { flex-grow: 1; font-weight: 600; font-size: 1.1em; color: #222; }
+        .rating-star { color: #FF9933; font-weight: bold; font-size: 1.2em; background: #FFF3E0; padding: 5px 12px; border-radius: 20px; }
+        
+        .about-text { font-size: 1.1em; color: #444; text-align: justify; }
+        .hindi-text { font-style: italic; color: #555; background: #fdfdfd; padding: 15px; border-radius: 10px; border-right: 4px solid #FF9933; }
+        footer { text-align: center; padding: 50px; color: #888; font-size: 0.9em; border-top: 1px solid #eee; margin-top: 40px; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Mera Desh Meri Rank 🇮🇳</h1>
-    <p><b>Live Leaderboard - सीधा आपके गाँव से</b></p>
-    <a href="#" class="btn">Download App</a>
+    <p style="font-size: 1.2em;"><b>Empowering Citizens through Transparency & Digital Identity</b></p>
+    <a href="#" class="btn">Download App (Google Play)</a>
 </header>
 
 <div class="container">
+    
     <!-- LIVE RANKING SECTION -->
     <div class="section">
         <h2>🏆 Top 5 Live Rankings (गाँव के सितारे)</h2>
         <div id="ranking-container">
-            <p style="text-align: center;">Bharat ke data se jud rahe hain... kripya pratiksha karein...</p>
+            <p style="text-align: center; padding: 20px;">Bharat ke data se jud rahe hain... kripya pratiksha karein...</p>
         </div>
     </div>
 
+    <!-- ABOUT SECTION -->
     <div class="section">
         <h2>About the App (ऐप के बारे में)</h2>
-        <p>यह ऐप नागरिकों और स्थानीय शासन के बीच की दूरी को कम करने के लिए बनाया गया है। हमारा मानना है कि पारदर्शिता ही विकास की कुंजी है।</p>
+        <div class="about-text">
+            <p><strong>Mera Desh Meri Rank</strong> is a revolutionary digital platform built to empower the citizens of Bharat. We believe that development starts with transparency and accountability. Our mission is to bridge the gap between local governance and the common man.</p>
+            <p>Through our app, you can track the performance of your local leaders, get your unique <strong>Digital Nagrik ID</strong>, and access essential local services like real-time Mandi rates, blood donors, and emergency contacts—all in one place.</p>
+            
+            <div class="hindi-text">
+                <p><strong>मेरा देश मेरी रैंक</strong> भारत के नागरिकों को सशक्त बनाने के लिए बनाया गया एक क्रांतिकारी डिजिटल मंच है। हमारा मानना है कि विकास की शुरुआत पारदर्शिता और जवाबदेही से होती है। हमारा लक्ष्य स्थानीय शासन और आम आदमी के बीच की दूरी को कम करना है।</p>
+                <p>हमारी ऐप के माध्यम से आप अपने स्थानीय नेताओं के प्रदर्शन को ट्रैक कर सकते हैं, अपनी अनूठी <strong>डिजिटल नागरिक आईडी</strong> प्राप्त कर सकते हैं, और मंडी भाव, रक्तदाता और आपातकालीन संपर्क जैसी सेवाओं का लाभ उठा सकते हैं।</p>
+            </div>
+        </div>
     </div>
 
+    <!-- PRIVACY POLICY SECTION -->
     <div class="section">
         <h2>Privacy Policy (गोपनीयता नीति)</h2>
-        <p>हम आपकी गोपनीयता का सम्मान करते हैं। ऐप केवल स्थानीय रैंकिंग सेवाएं प्रदान करने के लिए स्थान डेटा एकत्र करता है। आपका डेटा सुरक्षित है।</p>
+        <p>We respect your privacy. The app collects location data only to provide local ranking services and categorizes users at the village/district level. No personal sensitive data is shared with third parties. Your data is secured via Google Firebase encryption.</p>
+        <p>हम आपकी गोपनीयता का सम्मान करते हैं। ऐप केवल स्थानीय रैंकिंग सेवाएं प्रदान करने के लिए स्थान डेटा एकत्र करता है। आपका डेटा Google Firebase पर पूरी तरह सुरक्षित है।</p>
     </div>
+
+    <!-- CONTACT SECTION -->
+    <div class="section">
+        <h2>Contact Us (संपर्क करें)</h2>
+        <p>For support, suggestions, or feedback, reach out to us at:</p>
+        <p style="font-size: 1.1em;">📧 Email: <strong>support@meradeshmerirank.app</strong></p>
+    </div>
+
 </div>
 
 <footer>
-    <p>&copy; 2024 Mera Desh Meri Rank. Powered by Citizens of Bharat.</p>
+    <p>&copy; 2024 Mera Desh Meri Rank. <br> Built with ❤️ for a Digital Bharat.</p>
 </footer>
 
 <!-- FIREBASE SDK -->
@@ -55,7 +82,7 @@
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
   import { getFirestore, collection, query, orderBy, limit, onSnapshot } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
-  // Your real config integrated
+  // Using your Real Config
   const firebaseConfig = {
     apiKey: "AIzaSyD89HVsW6RqoxJouUH_2kAi7uKgV5jhQDI",
     authDomain: "mera-desh-meri-rank-r9hxuw.firebaseapp.com",
@@ -66,19 +93,17 @@
     measurementId: "G-6SDK957P0B"
   };
 
-  // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
 
   // Real-time listener for rankings
-  // Make sure your collection name is "leaders" in Firestore
   const q = query(collection(db, "leaders"), orderBy("currentRating", "desc"), limit(5));
   const container = document.getElementById('ranking-container');
 
   onSnapshot(q, (snapshot) => {
     container.innerHTML = '';
     if (snapshot.empty) {
-        container.innerHTML = '<p style="text-align:center; padding: 20px;">Abhi tak koi data nahi mila. App se vote karein!</p>';
+        container.innerHTML = '<p style="text-align:center; padding: 20px; color:gray;">Abhi tak koi data nahi mila. App se rankings shuru karein!</p>';
         return;
     }
     
@@ -89,14 +114,14 @@
       div.className = 'ranking-card';
       div.innerHTML = `
         <span class="rank-number">#${rank++}</span>
-        <span class="leader-name">${leader.name} <br> <small style="color:gray">${leader.village || leader.district || 'National'}</small></span>
+        <span class="leader-name">${leader.name} <br> <small style="color:#777; font-weight:normal;">${leader.village || leader.district || 'National Representative'}</small></span>
         <span class="rating-star">★ ${(leader.currentRating || 0).toFixed(1)}</span>
       `;
       container.appendChild(div);
     });
   }, (error) => {
     console.error("Firestore Error:", error);
-    container.innerHTML = '<p style="text-align:center; color:red; padding: 20px;">Data load nahi ho saka. Firebase Rules check karein.</p>';
+    container.innerHTML = '<p style="text-align:center; color:red; padding: 20px;">Data load karne mein samasya hui. Kripya Firestore Rules check karein.</p>';
   });
 </script>
 
